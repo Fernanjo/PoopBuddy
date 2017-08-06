@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:text="@string/data_title"/>
+
+    <Spinner
+        android:id="@+id/data_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/data_spinner" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="15dp"
+        android:stretchColumns="*"
+        >
+
+        <TableRow>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/data_title1"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/datatableborder"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/data_row1"
+                android:background="@drawable/datatableborder"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/data_title2"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/datatableborder"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/data_row2"
+                android:background="@drawable/datatableborder"
+                android:gravity="end"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/data_title3"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/datatableborder"
+                />
+            <TextView
+                android:visibility="gone"
+                android:padding="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/data_row3"
+                android:background="@drawable/datatableborder"
+                android:gravity="end"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/data_none"
+        android:gravity="center"
+        android:paddingTop="100dp"/>
+
+</LinearLayout>

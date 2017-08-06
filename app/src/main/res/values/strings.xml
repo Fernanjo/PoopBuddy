@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Poop Buddy</string>
+    <string name="col_1">ID</string>
+    <string name="col_2">Date</string>
+    <string name="col_3">Time</string>
+    <string name="col_4">Location</string>
+    <string name="col_5">Quality</string>
+    <string name="col_6">Comment</string>
+    <string name="col_7">Pain?</string>
+    <string name="col_8">Blood?</string>
+    <string name="insBtn">Insert Data</string>
+    <string name="dateBtn">Set Date</string>
+    <string name="timeBtn">Set Time</string>
+    <string name="home_log">Log an Event</string>
+    <string name="home_record">All Records</string>
+    <string-array name="location_spinner">
+        <item>*NEW*</item>
+        <item>Home</item>
+        <item>Work</item>
+        <item>Train Station</item>
+    </string-array>
+    <string-array name="quality_spinner">
+        <item>Solid</item>
+        <item>Soft</item>
+        <item>Liquid</item>
+    </string-array>
+    <string name="records_title">Records</string>
+    <string name="logo_text">Poop Buddy Logo</string>
+    <string name="data_title">Data Centre</string>
+    <string name="dataBtn">Display Data</string>
+    <string name="data_none">No data to display</string>
+    <string name="log_title">Log an Event</string>
+    <string-array name="data_spinner">
+        <item>All logged events</item>
+        <item>Data this month</item>
+        <item>Data this year</item>
+    </string-array>
+    <string name="tv_norecords">No records to display</string>
+</resources>
