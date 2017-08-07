@@ -53,7 +53,7 @@ public class DataActivity extends AppCompatActivity implements AdapterView.OnIte
     /*TODO Fixes to poopPerDay
     For this month total, per day figure should be based on days of month passed so far
     Otherwise, total should be displayed as a rounded number to 2 decimal places
-    Currently showing 0 when poopThisMonth method returns 2
+    Corrected to be a float, rather than long and now need to confirm 2 decimal places
      */
     private String poopPerDay(int month, int year) { return myDb.poopPerDay(month+1, year); }
 

@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * Created by Anthony on 03/06/2017.
@@ -195,7 +196,7 @@ class DatabaseHelper extends SQLiteOpenHelper {
         int daysInMonth = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
         float result = count / daysInMonth;
         res.close();
-        return "" + result;
+        return String.format(Locale.ENGLISH, "%.02f", result);
     }
 
     int minID() {

@@ -129,37 +129,6 @@ public class LogActivity extends AppCompatActivity implements AdapterView.OnItem
 
                     @Override
                     public void onClick(View v) {
-                        /*
-                        Old method used for adding test records below:
-                        for (int i = 0; i < 10; i++) {
-                            String quality = "";
-                            switch (i%3) {
-                                case 0:
-                                    quality = "Solid";
-                                    break;
-                                case 1:
-                                    quality = "Soft";
-                                    break;
-                                case 2:
-                                    quality = "Liquid";
-                                    break;
-                            }
-                            String pain = checkPain();
-                            String blood = checkBlood();
-                            myDb.insertData(
-                                    String.format(Locale.ENGLISH, "%02d", i + 1),
-                                    "01",
-                                    "2017",
-                                    "12",
-                                    String.format(Locale.ENGLISH, "%02d", i),
-                                    sLocation.getSelectedItem().toString(),
-                                    quality,
-                                    pain,
-                                    blood,
-                                    "Test " + i
-                            );
-                        }
-                        */
                         String day = "" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
                         String month = "" + Calendar.getInstance().get(Calendar.MONTH);
                         String year = "" + Calendar.getInstance().get(Calendar.YEAR);
