@@ -125,9 +125,12 @@ public class LogActivity extends AppCompatActivity implements AdapterView.OnItem
 
     private void TEST_add10() {
         btnAdd10.setOnClickListener(
-                new View.OnClickListener() {
+        new View.OnClickListener() {
+
                     @Override
                     public void onClick(View v) {
+                        /*
+                        Old method used for adding test records below:
                         for (int i = 0; i < 10; i++) {
                             String quality = "";
                             switch (i%3) {
@@ -156,6 +159,22 @@ public class LogActivity extends AppCompatActivity implements AdapterView.OnItem
                                     "Test " + i
                             );
                         }
+                        */
+                        String day = "" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+                        String month = "" + Calendar.getInstance().get(Calendar.MONTH);
+                        String year = "" + Calendar.getInstance().get(Calendar.YEAR);
+
+                        myDb.insertData(day, month, year, "9", "05", "Home", "Solid", "N", "N", "Test Record 1");
+                        myDb.insertData(day, month, year, "10", "10", "Train Station", "Soft", "N", "N", "Test Record 2");
+                        myDb.insertData(day, month, year, "11", "15", "Work", "Solid", "N", "N", "Test Record 3");
+                        myDb.insertData(day, month, year, "12", "20", "Work", "Soft", "N", "N", "Test Record 4");
+                        myDb.insertData(day, month, year, "13", "25", "Work", "Solid", "N", "N", "Test Record 5");
+                        myDb.insertData(day, month, year, "14", "30", "Train Station", "Soft", "N", "N", "Test Record 6");
+                        myDb.insertData(day, month, year, "15", "35", "Home", "Liquid", "N", "N", "Test Record 7");
+                        myDb.insertData(day, month, year, "16", "40", "Home", "Liquid", "N", "N", "Test Record 8");
+                        myDb.insertData(day, month, year, "17", "45", "Home", "Solid", "Y", "N", "Test Record 9P");
+                        myDb.insertData(day, month, year, "18", "50", "Home", "Solid", "N", "Y", "Test Record 10B");
+
                         Toast.makeText(LogActivity.this, "10 records added", Toast.LENGTH_SHORT).show();
                     }
                 }
